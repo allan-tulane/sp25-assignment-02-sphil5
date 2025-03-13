@@ -26,6 +26,12 @@ def parens_match_iterative(mylist):
     return iterate(parens_update, 0, mylist) == 0
     ###
 
+def iterate(func, state, mylist): ## implement the iterate function
+    if len(mylist) <= 0:
+        return state 
+    else:
+        return iterate(func, func(state, mylist[0]), mylist[1:])
+
 
 def parens_update(current_output, next_input):
     """

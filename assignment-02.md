@@ -1,6 +1,6 @@
 # CMPS 2200 Assignment 2
 
-**Name:**_________________________
+**Name:** Shania Phillips
 
 In this assignment we'll work on applying the methods we've learned to analyze recurrences, and also see their behavior
 in practice. As with previous
@@ -15,7 +15,7 @@ and push to your github repository.
 Derive asymptotic upper bounds of work for each recurrence below.
 
 * $W(n)=2W(n/3)+1$
-.  
+.  W(n) = O(n^{log_3 2})
 .  
 . 
 .  
@@ -24,7 +24,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
  
 * $W(n)=5W(n/4)+n$
-.  
+.  W(n) = O(n^{log_4 5})
 .
 .  
 . 
@@ -35,7 +35,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
 
 * $W(n)=7W(n/7)+n$
-.  
+.  W(n) = O(n log n)
 . 
 .  
 .  
@@ -44,7 +44,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 
 * $W(n)=9W(n/3)+n^2$
-.  
+.  W(n) = O(n^2 log n)
 .
 . 
 .  
@@ -55,7 +55,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 
 * $W(n)=8W(n/2)+n^3$
-.  
+.  W(n) = O(n^3 log n)
 .
 .  
 .  
@@ -67,7 +67,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 
 
 * $W(n)=49W(n/25)+n^{3/2}\log n$
-.  
+.  W(n) = O(n^{3/2} log n)
 .  
 . 
 .  
@@ -77,7 +77,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 
 * $W(n)=W(n-1)+2$
-.  
+.  W(n) = O(n)
 .  
 . 
 .  
@@ -87,7 +87,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 
 * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  
+.  W(n) = O(n^{c + 1})
 .  
 .  
 .  
@@ -97,7 +97,7 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
 
 * $W(n)=W(\sqrt{n})+1$
-.  
+.  W(n) = O(log n)
 .  
 .  
 .  
@@ -127,10 +127,10 @@ Suppose that for a given task you are choosing between the following three algor
     Which algorithm would you choose?
 
 
-.  
-.  
-.  
-.  
+.  The asymptotic running time for algorithm $\mathcal{C}$ is W(n) = O(n^{log_2 5})
+.  The asymptotic running time for algorithm $\mathcal{B}$ is W(n) = O(2^n)
+.  The asymptotic running time for algorithm $\mathcal{C}$ is W(n) = O(n^2 log n)
+.  I would choose algorithm $\mathcal{C}$ because it has the best running time.
 . 
 . 
 
@@ -161,6 +161,8 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 **3b.** What are the recurrences for the Work and Span of this solution? What are their Big Oh solutions?
 
 **enter answer here**
+Work = O(n)
+Span = O(n)
 
 .  
 . 
@@ -177,6 +179,8 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 **3d.** Assume that any `map`s are done in parallel, and that we use the efficient implementation of `scan` from class. What are the recurrences for the Work and Span of this solution? 
 
 **enter answer here**
+Work = O(n)
+Span = O(log n)
 
 .  
 .  
@@ -198,6 +202,8 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 **3f.** Assuming any recursive calls are done in parallel, what are the recurrences for the Work and Span of this solution? What are their Big Oh solutions?
 
 **enter answer here**
+Work = O(n)
+Span = O(log n)
 
 .  
 . 
